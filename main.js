@@ -77,3 +77,23 @@ ScrollReveal().reveal(".favourite__card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
+
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (event) {
+        event.preventDefault();
+        
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const navbarHeight = document.querySelector("nav").offsetHeight;
+            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+            
+            window.scrollTo({
+                top: elementPosition - navbarHeight,
+                behavior: "smooth"
+            });
+        }
+    });
+});
