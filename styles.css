@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --primary-color:	#6B8E23;
-  --text-dark: #000000;
+  --primary-color:	#8cbe27;
+  --text-dark: white; 
   --text-light: #737373;
   --extra-light: #f4f6f6;
   --white: #ffffff;
@@ -37,12 +37,13 @@
   right: -20px;
   height: 100px;
   width: 150px;
-  background-image: url("assets/header-bg.png");
+  /* background-image: url("assets/header-bg.png"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: -1;
-  border: solid black;
+
+
 }
 
 .btn {
@@ -98,6 +99,7 @@ nav {
 .nav__logo img 
 {
   height: 100px;
+
   
 }
 
@@ -158,13 +160,14 @@ header {
   padding-inline: 1rem;
   margin-bottom: 5rem;
   overflow: hidden;
+ 
 }
 
 .header__container {
   padding: 0;
   max-width: calc(var(--max-width) - 2rem);
   display: grid;
-  background-color: var(--extra-light);
+  background-color: #6B8E23;
   border-radius: 2rem;
 }
 
@@ -172,21 +175,21 @@ header {
   padding: 5rem 2rem;
 }
 
-.header__content h1 {
+.header__content h2 {
   margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 900;
   line-height: 5.5rem;
-  color: var(--text-dark);
+  color: white;
   text-align: center;
 }
 
-.header__content h1 span {
+.header__content h2 span {
   position: relative;
   isolation: isolate;
 }
 
-.header__content h1 span::before {
+.header__content h2 span::before {
   position: absolute;
   content: "";
   top: 0;
@@ -197,12 +200,15 @@ header {
   z-index: -1;
 }
 
-.header__content h1 span:nth-child(1)::before {
-  background-color: var(--white);
+.header__content h2 span:nth-child(1)::before {
+  background-color: #8cbe27;
+
 }
 
-.header__content h1 span:nth-child(4)::before {
+
+.header__content h2 span:nth-child(4)::before {
   background-color: var(--primary-color);
+  
 }
 
 .header__content p {
@@ -557,7 +563,7 @@ footer {
   margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--white);
+  color: black;
 }
 
 .footer__links {
@@ -570,7 +576,7 @@ footer {
 }
 
 .footer__links a:hover {
-  color: var(--white);
+  color: #8cbe27;
 }
 
 .footer__bar {
@@ -585,7 +591,7 @@ footer {
 @media (width > 540px) {
 
  
-  .header__content h1 {
+  .header__content h2 {
     font-size: 5rem;
     line-height: 6.5rem;
   }
