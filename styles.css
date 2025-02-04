@@ -85,7 +85,7 @@ body {
 body {
   font-family: "Poppins", sans-serif;
   background-color: 	#6B8E23;
-  border: solid black;
+
 }
 
 nav {
@@ -596,7 +596,7 @@ footer {
 .contact-container 
 {
   height:100vh;
-  border: solid black;
+
   display: flex;
   align-items: center;
   justify-content: space-evenly;
